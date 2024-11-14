@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gajendra Raturi's Portfolio</title>
+    <style>
+        /* Basic Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #0062cc;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0062cc;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #004085;
+            border-radius: 4px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #0062cc;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-top: 10px;
+        }
+        .header p.intro {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* Sections */
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #0062cc;
+            padding-bottom: 10px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .section ul li {
+            padding: 8px 0;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0062cc;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 1em;
+            margin-top: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #004085;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0062cc;
+            color: white;
+            border-radius: 0 0 8px 8px;
+        }
+        .footer a {
+            color: #f4f4f9;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar a {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+            .header img {
+                width: 120px;
+                height: 120px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#extra">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="profile.png" alt="Gajendra Raturi">
+            <h1>Gajendra Raturi</h1>
+            <p class="intro"></p>
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Dynamic and motivated third-year Electronics and Computer Science student at Fr. Conceicao Rodrigues College of Engineering. Skilled in various programming languages and passionate about tech innovation and problem-solving.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, C++, C, Java, JavaScript</li>
+                <li><strong>Database Management:</strong> SQL</li>
+                <li><strong>Soft Skills:</strong> Problem-solving, Management, Leadership, Innovation, Teamwork</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Hospital Management System</strong> - A comprehensive system to streamline hospital operations, manage patient records, and improve service efficiency. <br>Tech Stack: Java, MySQL, HTML/CSS, JavaScript, Spring Boot.</li>
+            </ul>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="section" id="extra">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Ranked 3rd in Algoholic 2023, Fr. CRCE.</li>
+                <li>Participated in Hackathon 2023.</li>
+                <li>Solved over 250 problems on Codeforces.</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Engineering (B.E.)</strong> - Electronics and Computer Science, Fr. Conceicao Rodrigues College of Engineering, CGPA: 6.9/10</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" id="contact">
+            <p>Connect with me: 
+                <a href="https://www.linkedin.com/in/gajendra-raturi" target="_blank">LinkedIn</a>
+            </p>
+            <p>&copy; 2024 Gajendra Raturi</p>
+        </div>
+    </div>
+
+    <script>
+        // Typing Effect
+        const introText = "Electronics and Computer Science Engineer | Motivated Developer";
+        let index = 0;
+
+        function typeEffect() {
+            if (index < introText.length) {
+                document.querySelector(".intro").innerHTML += introText.charAt(index);
+                index++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+        window.onload = typeEffect;
+    </script>
+
+</body>
+</html>
